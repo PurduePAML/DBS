@@ -62,7 +62,7 @@ The dataset folder shall have the following structure
 1. Clone the repository
 
     ```
-    git clone https://github.com/usnistgov/trojai-example](https://github.com/PurduePAML/DBS/
+    git clone https://github.com/PurduePAML/DBS/
     cd DBS/trojai_r6
     ``` 
 2. Change dataset dirpath `TROJAI_R6_DATASET_DIR` defined in `trojai_r6/dbs.py` to the dirpath on your machine.
