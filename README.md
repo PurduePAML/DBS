@@ -136,7 +136,19 @@ The dataset folder shall have the following structure
 
 ## Reference 
 
+```
+@article{shen2022constrained,
+  title={Constrained Optimization with Dynamic Bound-scaling for Effective NLPBackdoor Defense},
+  author={Shen, Guangyu and Liu, Yingqi and Tao, Guanhong and Xu, Qiuling and Zhang, Zhuo and An, Shengwei and Ma, Shiqing and Zhang, Xiangyu},
+  journal={arXiv preprint arXiv:2202.05749},
+  year={2022}
+}
+```
 
 -------------------------------------------------
 
 ## Contacts
+
+Guangyu Shen, [shen447@purdue.edu](shen447@purdue.edu)  
+Yingqi Liu, [liu1751@purdue.edu](liu1751@purdue.edu)
+
