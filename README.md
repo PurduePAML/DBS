@@ -1,5 +1,7 @@
 # Constrained Optimization with Dynamic Bound-scaling for Effective NLP Backdoor Defense
 
+<img src="dbs_cover.png" width="1000px"/>
+
 This is the implementation for ICML2022 paper [Constrained Optimization with Dynamic Bound-scaling for Effective NLP Backdoor Defense](https://arxiv.org/pdf/2202.05749.pdf)
 
 ------------------------------------------------
