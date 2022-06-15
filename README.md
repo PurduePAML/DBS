@@ -114,6 +114,13 @@ The dataset folder shall have the following structure
 -------------------------------------------------
 ## Notes
 
+1. Hyperparameters are defined in `trojai_r6/config/config.yaml`. Here we list several critical parameters and describe their usages.
+    1. `trigger_len`: Number of tokens inverted during optimization 
+    2. `loss_barrier`: Loss value bound to trigger the temperature scaling mechanism.
+    3. `detection_loss_thres`: Loss value threshold to determine whether the model is trojan or benign. We set different thresholds for different model archiectureus. 
+
+2. 
+
 
 -------------------------------------------------
 
