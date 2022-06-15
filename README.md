@@ -42,17 +42,74 @@ The dataset folder shall have the following structure
 │   ├── DistilBERT-distilbert-base-uncased.pt
 │   └── GPT-2-gpt2.pt
 
-
-123 directories, 2922 files
-
 ```
 
 
 ### Setup Environments 
+1. Install Anaconda Python [https://www.anaconda.com/distribution/](https://www.anaconda.com/distribution/)
+2. `conda create --name icml_dbs python=3.8 -y` ([help](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html))
+3. `conda activate icml_dbs`
+
+    1. `conda install pytorch=1.7.0 torchvision=0.8.0 cudatoolkit=11.0 -c pytorch` 
+    2. `pip install --upgrade trojai`
+    3. `conda install jsonpickle`
+    4. `conda install colorama`
+
 
 -------------------------------------------------
 ## Usage
 
+1. Clone the repository
+
+    ```
+    git clone https://github.com/usnistgov/trojai-example](https://github.com/PurduePAML/DBS/
+    cd DBS/trojai_r6
+    ``` 
+2. Change dataset dirpath `TROJAI_R6_DATASET_DIR` defined in `trojai_r6/dbs.py` to the dirpath on your machine.
+
+
+
+3. Run `DBS` on a single model
+
+    1. DistilBERT
+    
+    
+    
+     ```bash
+    python dbs.py --model_filepath TROJAI_R6_DATASET_DIR/models/model-id/model.pt \
+    --tokenizer_filepath TROJAI_R6_DATASET_DIR/tokenizers/DistilBERT-distilbert-base-uncased.pt \
+    --result_filepath ./result  \
+    --scratch_dirpath ./scratch \
+    --examples_dirpath TROJAI_R6_DATASET_DIR/models/model-id/clean_example_data
+    ```
+    
+    2. GPT-2
+
+
+    
+     ```bash
+    python dbs.py --model_filepath TROJAI_R6_DATASET_DIR/models/model-id/model.pt \
+    --tokenizer_filepath TROJAI_R6_DATASET_DIR/tokenizers/GPT-2-gpt2.pt \
+    --result_filepath ./result  \
+    --scratch_dirpath ./scratch \
+    --examples_dirpath TROJAI_R6_DATASET_DIR/models/model-id/clean_example_data
+    ```
+    
+    
+    Example Output:
+    
+    ```
+    [Best Estimation]: victim label: 1  target label: 0 position: first_half  
+    trigger:  1656 stall 238 plaintiff graves poorer variant contention stall portraying  loss: 0.027513
+    ```
+4. Run `DBS` on the entire dataset 
+
+   
+   ```bash
+   python main.py
+   ```
+   
+    
 
 -------------------------------------------------
 ## Notes
