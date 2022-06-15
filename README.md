@@ -4,7 +4,21 @@
 
 This is the implementation for ICML2022 paper [Constrained Optimization with Dynamic Bound-scaling for Effective NLP Backdoor Defense](https://arxiv.org/pdf/2202.05749.pdf)
 
+## Reference 
+
+```
+@article{shen2022constrained,
+  title={Constrained Optimization with Dynamic Bound-scaling for Effective NLPBackdoor Defense},
+  author={Shen, Guangyu and Liu, Yingqi and Tao, Guanhong and Xu, Qiuling and Zhang, Zhuo and An, Shengwei and Ma, Shiqing and Zhang, Xiangyu},
+  journal={arXiv preprint arXiv:2202.05749},
+  year={2022}
+}
+```
+
+
 ------------------------------------------------
+
+
 
 ## Preparation 
 
@@ -140,18 +154,7 @@ The dataset folder shall have the following structure
 
 -------------------------------------------------
 
-## Reference 
 
-```
-@article{shen2022constrained,
-  title={Constrained Optimization with Dynamic Bound-scaling for Effective NLPBackdoor Defense},
-  author={Shen, Guangyu and Liu, Yingqi and Tao, Guanhong and Xu, Qiuling and Zhang, Zhuo and An, Shengwei and Ma, Shiqing and Zhang, Xiangyu},
-  journal={arXiv preprint arXiv:2202.05749},
-  year={2022}
-}
-```
-
--------------------------------------------------
 
 ## Contacts
 
