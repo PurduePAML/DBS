@@ -119,7 +119,12 @@ The dataset folder shall have the following structure
     2. `loss_barrier`: Loss value bound to trigger the temperature scaling mechanism.
     3. `detection_loss_thres`: Loss value threshold to determine whether the model is trojan or benign. We set different thresholds for different model archiectureus. 
 
-2. 
+2. Triggers in Round6 poison models have multiple options based on their affected label pairs and injected positions. Since we do not assume the defender knows the exact trigger setting aforehead, we simply enumerate all possible combinations and pick the inverted trigger with smallest loss value as the final output. 
+3. To avoid including sentimential words in the inverted triggers, we apply a benign reference model during optimization. Hence the inversion objective contains two items;
+    1. The inverted trigger shall flip samples from the victim label to the target label for the model under scanning.
+    2. The inverted trigger shall not flip samples from the victim label to the target label for the benign reference model. 
+    
+    When scanning Distilbert models, we use `id-00000006` from train set as the benign reference model. When scanning GPT-2 models, we use `id-00000001` from the train set as the benign reference model. 
 
 
 -------------------------------------------------
