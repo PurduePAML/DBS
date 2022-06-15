@@ -1,0 +1,24 @@
+# temperature scaling related hyperparameters
+init_temp: 2
+max_temp: 2
+temp_scaling_check_epoch: 5
+temp_scaling_down_multiplier: 2
+temp_scaling_up_multiplier: 5
+loss_barrier: 0.1
+noise_ratio: 10
+rollback_thres: 5 
+
+# optimization related hyperparameters
+epochs: 200
+lr: 0.5 
+scheduler_step_size: 50 
+scheduler_gamma: 0.5 
+
+# other hyperparameters
+trigger_len: 10
+max_len: 100
+eps_to_one_hot: 0.001
+seed: 1
+detection_loss_thres:
+  - distilbert: 0.001
+  - gpt2: 0.001
