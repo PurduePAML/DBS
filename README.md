@@ -7,12 +7,24 @@ This is the implementation for ICML2022 paper [Constrained Optimization with Dyn
 ## Reference 
 
 ```
-@article{shen2022constrained,
-  title={Constrained Optimization with Dynamic Bound-scaling for Effective NLPBackdoor Defense},
-  author={Shen, Guangyu and Liu, Yingqi and Tao, Guanhong and Xu, Qiuling and Zhang, Zhuo and An, Shengwei and Ma, Shiqing and Zhang, Xiangyu},
-  journal={arXiv preprint arXiv:2202.05749},
-  year={2022}
+
+@InProceedings{pmlr-v162-shen22e,
+  title = 	 {Constrained Optimization with Dynamic Bound-scaling for Effective {NLP} Backdoor Defense},
+  author =       {Shen, Guangyu and Liu, Yingqi and Tao, Guanhong and Xu, Qiuling and Zhang, Zhuo and An, Shengwei and Ma, Shiqing and Zhang, Xiangyu},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {19879--19892},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/shen22e/shen22e.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/shen22e.html},
 }
+
+
+
 ```
 
 
