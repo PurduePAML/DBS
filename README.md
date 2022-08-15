@@ -145,16 +145,6 @@ The dataset folder shall have the following structure
 
 -------------------------------------------------
 
-## Evaluation 
-| Dataset                                 | Number of Models  | TP  | TN | FP | FN | Accuracy |
-| :-------------------------------------  | :---------------: | :--:|:--:|:--:|:--:|:--------:|
-| Train set                               |         48        |
-| Test set                                |         480       |
-| Holdout set                             |         480       |
-
--------------------------------------------------
-
-
 
 ## Contacts
 
